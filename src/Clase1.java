@@ -21,7 +21,6 @@ public class Clase1 {
         System.out.print("PI equivale a: "+PI + "\n");
         System.out.println("NE = "+ NE);
 
-
         // Casting examples
         System.out.println("Conversiones");
         String word = "1234";
