@@ -25,5 +25,16 @@ public class Clase2 {
         System.out.println("Operaciones con potencia");
         System.out.println(Math.pow(2,3));
         System.out.println(Math.pow(5,6));
+
+        System.out.println("Operaciones con raiz cuadrada");
+        double cateto1, cateto2, hiponenusa;
+        System.out.println("Ingrese cateto1:");
+        cateto1 = sc.nextDouble();
+        System.out.println("Ingrese cateto2:");
+        cateto2 = sc.nextDouble();
+
+        hiponenusa = Math.sqrt( Math.pow(cateto1,2 ) + Math.pow(cateto2,2));
+        System.out.println(hiponenusa);
+
     }
 }
