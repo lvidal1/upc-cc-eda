@@ -10,7 +10,7 @@ public class Clase2 {
         float peso;
         int edad;
 
-        System.out.print("Ingrese su nombre:");
+/*        System.out.print("Ingrese su nombre:");
         nombre = sc.nextLine();
         System.out.println("Hola " + nombre+ "!!!");
 
@@ -20,6 +20,10 @@ public class Clase2 {
 
         System.out.print("Ingrese su edad:");
         edad = sc.nextInt();
-        System.out.printf("Hola %s. Su peso es de %.2f kilos y su edad es %d", nombre, peso, edad);
+        System.out.printf("Hola %s. Su peso es de %.2f kilos y su edad es %d", nombre, peso, edad);*/
+
+        System.out.println("Operaciones con potencia");
+        System.out.println(Math.pow(2,3));
+        System.out.println(Math.pow(5,6));
     }
 }
