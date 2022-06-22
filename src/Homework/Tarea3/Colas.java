@@ -21,9 +21,9 @@ public class Colas {
         Queue<Integer> cola1 = new LinkedList<>();
         Scanner input = new Scanner(System.in);
 
-        logBlueTitle("#      Análisis de números 2022      #"  );
+        logBlueTitle("#  Queue: Análisis de números 2022   #"  );
 
-        System.out.println("¿Cuántos números desea evaluar?");
+        System.out.println("¿Cuántos números desea evaluar en la cola?");
         quantity = input.nextInt();
 
         System.out.println("¿Cúal es el límite inferior del rango de números?");
@@ -49,7 +49,7 @@ public class Colas {
         System.out.println(cola1 + "\n");
 
         logYellowSubTitle("3. Comparación de sumas");
-        compareSumOfNumber(cola1);
+        compareSumOfNumbers(cola1);
     }
 
     public static double calculateAverage(Queue<Integer> numbers){
@@ -70,9 +70,9 @@ public class Colas {
         return number % 3 == 0 || number % 5 == 0;
     }
 
-    public static void compareSumOfNumber(Queue<Integer> numbers){
-        int oddSum = getSumOfNumber( TYPE_IMPAR , numbers);
-        int evenSum = getSumOfNumber( TYPE_PAR  , numbers);
+    public static void compareSumOfNumbers(Queue<Integer> numbers){
+        int oddSum = getSumOfNumbers( TYPE_IMPAR , numbers);
+        int evenSum = getSumOfNumbers( TYPE_PAR  , numbers);
 
         System.out.println("La suma de números IMPAR es: "+ oddSum);
         System.out.println("La suma de números PAR es: "+ evenSum);
@@ -84,7 +84,7 @@ public class Colas {
         }
     }
 
-    public static int getSumOfNumber(int type, Queue<Integer> numbers){
+    public static int getSumOfNumbers(int type, Queue<Integer> numbers){
 
         int sum = 0;
 

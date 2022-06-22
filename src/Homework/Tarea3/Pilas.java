@@ -19,7 +19,7 @@ public class Pilas {
         Stack<Integer> ages = new Stack<>();
         int option = OPTION_READ_AGE;
 
-        logBlueTitle("#       Cálculo de edades 2022       #"  );
+        logBlueTitle("#    Stack: Cálculo de edades 2022   #"  );
 
         while(option == OPTION_READ_AGE){
             ages.push( readAge() );
