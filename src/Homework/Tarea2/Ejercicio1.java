@@ -42,9 +42,9 @@ public class Ejercicio1 {
 
         System.out.println("*-------- Resultados -------*\n");
 
-        System.out.println("- El mes de mayor venta es: "+ minMonthSale);
+        System.out.println("- El mes de menor venta es: "+ minMonthSale);
 
-        System.out.println("- El mes de menor venta es: "+ maxMonthSale);
+        System.out.println("- El mes de mayor venta es: "+ maxMonthSale);
 
         System.out.printf("- El promedio de ventas es: S/ %.2f \n", average);
 
@@ -108,9 +108,7 @@ public class Ejercicio1 {
     public static double getSalesAverage(double[] monthSales){
         double sum = 0;
         if(monthSales.length > 0){
-            for (int i = 0; i < monthSales.length; ++i) {
-                sum += monthSales[i];
-            }
+            for (int i = 0; i < monthSales.length; ++i) sum += monthSales[i];
             return sum / monthSales.length;
         }else{
             return sum;

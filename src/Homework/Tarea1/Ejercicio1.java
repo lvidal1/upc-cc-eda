@@ -97,7 +97,7 @@ public class Ejercicio1 {
     }
 
     /*
-     * Ejecuta el calculo del precio vase del producto
+     * Ejecuta el cálculo del precio vase del producto
      * */
     public static void executeGetBaseProductPrice(){
         int product;
@@ -106,7 +106,7 @@ public class Ejercicio1 {
     }
 
     /*
-     * Ejecuta el calculo del precio de venta del producto en un día del mes
+     * Ejecuta el cálculo del precio de venta del producto en un día del mes
      * */
     public static void executeGetSellProductPrice(){
         int product;
