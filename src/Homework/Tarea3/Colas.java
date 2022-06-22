@@ -18,7 +18,7 @@ public class Colas {
     public static void main(String[] args) {
 
         int max, min, quantity;
-        Queue<Integer> numbers = new LinkedList<>();
+        Queue<Integer> cola1 = new LinkedList<>();
         Scanner input = new Scanner(System.in);
 
         logBlueTitle("#      Análisis de números 2022      #"  );
@@ -33,23 +33,23 @@ public class Colas {
         max = input.nextInt();
 
         for (int i = 0; i < quantity; i++) {
-            numbers.add(generateRandomNumber(min,max));
+            cola1.add(generateRandomNumber(min,max));
         }
 
         logBlueSubtitle("*---------- Resultados ---------*"  );
 
         System.out.println("Las números generados son: ");
-        System.out.println(numbers + "\n");
+        System.out.println(cola1 + "\n");
 
         logYellowSubTitle("1. El promedio de los números es: ");
-        System.out.println(calculateAverage(numbers) + "\n");
+        System.out.println(calculateAverage(cola1) + "\n");
 
         logYellowSubTitle("2. Los números luego de remover múltiplos de 3 y 5 son: ");
-        numbers.removeIf(Colas::isMultiplyOfThreeOrFive);
-        System.out.println(numbers + "\n");
+        cola1.removeIf(Colas::isMultiplyOfThreeOrFive);
+        System.out.println(cola1 + "\n");
 
         logYellowSubTitle("3. Comparación de sumas");
-        compareSumOfNumber(numbers);
+        compareSumOfNumber(cola1);
     }
 
     public static double calculateAverage(Queue<Integer> numbers){
