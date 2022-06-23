@@ -148,5 +148,4 @@ public class Pilas {
         return color + message + ANSI_RESET;
     }
 
-
 }

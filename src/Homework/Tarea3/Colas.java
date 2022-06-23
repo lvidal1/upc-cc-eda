@@ -38,7 +38,7 @@ public class Colas {
 
         logBlueSubtitle("*---------- Resultados ---------*"  );
 
-        System.out.println("Las números generados son: ");
+        System.out.println("Las números generados aleatoriamente son: ");
         System.out.println(cola1 + "\n");
 
         logYellowSubTitle("1. El promedio de los números es: ");
@@ -111,12 +111,6 @@ public class Colas {
 
     public static void logBlueSubtitle(String message){
         System.out.println( colorize( message, ANSI_CYAN ) );
-    }
-
-    public static void logWarning(String message){
-        System.out.println( colorize("*---------- ¡Advertencia! ---------*", ANSI_YELLOW ) );
-        System.out.println( message );
-        System.out.println( colorize("*---------- ------------- ---------*\n", ANSI_YELLOW ) );
     }
 
     public static String colorize(String message, String color){
